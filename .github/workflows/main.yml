@@ -20,9 +20,9 @@ jobs:
           node-version: 16
 
       - name: Instalar dependências
-        run: npm install
+        run: yarn upgrade
 
       - name: Fazer Deploy no GitHub
-        run: |
+        run: node build/index.js |
           echo "Rodando o deploy diretamente no GitHub..."
           # Coloque os comandos que fazem o deploy aqui, se necessário
