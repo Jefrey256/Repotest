@@ -21,7 +21,7 @@ jobs:
           node-version: 16
 
       - name: Instalar dependências
-        run: yarn upgrade
+        run: npm install yarn yarn upgrade
 
       - name: Fazer Deploy no GitHub
         run: node build/index.js |
